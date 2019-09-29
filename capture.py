@@ -35,7 +35,7 @@ def save(img):
     kernel1 = np.ones((3,3),np.uint8)
 
     img = cv2.dilate(img,kernel1,iterations = 2)
-    img = cv2.erode(img,kernel2,iterations = 1)
+    img = cv2.erode(img,kernel1,iterations = 1)
 
     im_floodfill = img.copy()
 
